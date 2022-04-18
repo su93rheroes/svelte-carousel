@@ -63,11 +63,11 @@
   }
 
   export function left() {
-    action(controller.prev);
+    action(() => controller.prev());
   }
 
   export function right() {
-    action(controller.next);
+    action(() => controller.next());
   }
 
   function action(fn) {
